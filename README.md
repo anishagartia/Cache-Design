@@ -1,4 +1,4 @@
-## Cache-Design
+# Cache-Design
 
 In this project, we have simulated the function of a Cache. The project is implemented in C++. The simulator has  the following capabilities:
 
@@ -15,19 +15,19 @@ In this project, we have simulated the function of a Cache. The project is imple
 11.  There is an additional valid bit per block of storage overhead required in both L1 and L2. The valid bits are set to 0 when the simulation begins. 
 12. If a dirty block hits in L2, it is be clean when bringing it to L1.
 
-# Breakdown on fucntions in code:
+## Breakdown on fucntions in code:
 
 1. setup_cache: Subroutine for initializing the cache. 
 2. cache_access: Subroutine that simulates the cache one trace event at a time. Type can be either READ or WRITE, which is each defined in cachesim.hpp. A READ event is a memory load operation of 1 byte to the address specified in arg. A WRITE event is a memory store operation of 1 byte to the address specified in arg.
 3. complete_cache: Subroutine for cleaning up memory and calculating overall system statistics such as miss rate or average access time.
 
-# Statistics and Output of Simulator:
+## Statistics and Output of Simulator:
 
 For each entry in the trace file, print “Hx” or “Mx” for a hit or miss in L1 (“1”), the VC (“v”) or the L2 (“2”). Print “*” if the cache is not accessed. For example, the output would be “M1MvM2,” for a miss in all caches. 
 
 For each entry in the trace file, print “Hx” or “Mx” for a hit or miss in L1 (“1”), the VC (“v”) or the L2 (“2”). “*” is printed if the cache is not accessed. For example, the output would be “M1MvM2,” for a miss in all caches. “H1****” means a hit in L1 etc.
 
-# The following statistics are printed: 
+## The following statistics are printed: 
 a. number of accesses to the cache
 b. number of accesses to L2
 c. number of accesses to VC

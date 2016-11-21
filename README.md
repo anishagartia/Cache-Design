@@ -27,7 +27,7 @@ For each entry in the trace file, print “Hx” or “Mx” for a hit or miss i
 
 For each entry in the trace file, print “Hx” or “Mx” for a hit or miss in L1 (“1”), the VC (“v”) or the L2 (“2”). “*” is printed if the cache is not accessed. For example, the output would be “M1MvM2,” for a miss in all caches. “H1****” means a hit in L1 etc.
 
-## The following statistics are printed: 
+The following statistics are printed: 
 a. number of accesses to the cache
 b. number of accesses to L2
 c. number of accesses to VC
